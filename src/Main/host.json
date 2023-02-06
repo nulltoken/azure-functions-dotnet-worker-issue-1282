@@ -1,0 +1,32 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "durableTask": {
+      "hubName": "%ConfiguredTaskHubName%",
+      "tracing": {
+        "distributedTracingEnabled": true,
+        "distributedTracingProtocol": "W3CTraceContext"
+      }
+    },
+    "http": {
+      "hsts": {
+        "isEnabled": true,
+        "maxAge": "100",
+        "includeSubDomains": true
+      },
+      "customHeaders": {
+        "server": "[OBFUSCATED ;-)]"
+      }
+    }
+  },
+  "logging": {
+    "applicationInsights": {
+      "httpAutoCollectionOptions": {
+        "enableW3CDistributedTracing": true
+      },
+      "samplingSettings": {
+        "isEnabled": false
+      }
+    }
+  }
+}

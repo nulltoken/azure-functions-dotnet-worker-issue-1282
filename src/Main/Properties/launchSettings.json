@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Main": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7159",
+      "remoteDebugEnabled": false
+    }
+  }
+}
